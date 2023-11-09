@@ -1,4 +1,21 @@
-// routes/authRoutes.js
+/**
+ * @openapi
+ * /products:
+ *   get:
+ *     summary: Get a list of products
+ *     description: Retrieve a list of all products available.
+ *     responses:
+ *       200:
+ *         description: Successful response
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Product'
+ */
+
+
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/authController');

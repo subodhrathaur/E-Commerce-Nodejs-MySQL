@@ -1,7 +1,7 @@
 // models/User.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const GenderEnum = require('../utils/GenderEnum'); // Import the GenderEnum
+const {GenderEnum} = require('../utils/SEQULISE_ENUM'); // Import the GenderEnum
 
 const User = sequelize.define('User', {
   username: {
